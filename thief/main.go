@@ -168,7 +168,7 @@ func checkUDisk() []string {
 			fmt.Println("Error")
 		}
 		sn = strings.Split(information, "\\")[2]
-		if sn == "AA00000000010296" {
+		if sn == "特定U盘序列号" {
 			isUDisk = true
 			disks := GetSystemDisks()
 			return disks[len(disks)-i:]
